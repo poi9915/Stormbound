@@ -1,18 +1,15 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-namespace _Scripts.PlayerScripts
+namespace _Scripts._PlayerScripts
 {
     public class PlayerCamControl : MonoBehaviour
     {
-        
         // TODO : Tích hợp vào trong PlayerMoveControl để dễ xử lý khi tích hợp mirror-networking(25/5/2025)(trung)
-        
+        // 30/5/25 : ko cần phải tích hợp nữa 
         public float sensX;
         public float sensY;
         public Transform orientation;
+        public Transform body;
         float xRotation, yRotation;
 
         private void Start()
@@ -32,6 +29,7 @@ namespace _Scripts.PlayerScripts
 
             transform.rotation = Quaternion.Euler(xRotation, yRotation, 0f);
             orientation.rotation = Quaternion.Euler(0f, yRotation, 0f);
+            body.rotation = orientation.rotation;
         }
     }
 }

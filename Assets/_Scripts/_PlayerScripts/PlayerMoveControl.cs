@@ -1,20 +1,18 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-namespace _Scripts.PlayerScripts
+namespace _Scripts._PlayerScripts
 {
     public class PlayerMoveControl : MonoBehaviour
     {
         // TODO: sử dụng ScriptableObject để dễ xử lý việc thay đổi giá trị và input thay vì gán trực tiếp (26/5/2025)(trung)
-        [Header("Debug Info")]
-        public TMP_Text SpeedText;
+        [Header("Debug Info")] public TMP_Text SpeedText;
         public TMP_Text StateText;
         [Header("Movement")] private float moveSpeed;
         public float walkSpeed;
         public float sprintSpeed;
         public float groundDrag;
-
+        public float wallRunSpeed;
         [Header("Jumping")] public float jumpForce;
         public float jumpCooldown;
         public float airMultiplier;
@@ -41,13 +39,15 @@ namespace _Scripts.PlayerScripts
         private Vector3 moveDirection;
         private Rigidbody rb;
         public MoveState moveState;
+        public bool isWallRunning;
 
         public enum MoveState
         {
             Walking,
             Crouching,
             Sprinting,
-            Air
+            Air,
+            WallRunning,
         }
 
         void Start()
@@ -60,8 +60,6 @@ namespace _Scripts.PlayerScripts
 
         void Update()
         {
-            
-
             // check ground bằng raycast hướng xuống 
             isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, groundLayer);
             //Debug.DrawRay(transform.position, Vector3.down * (playerHeight * 0.5f + 0.3f), Color.red);
@@ -84,7 +82,13 @@ namespace _Scripts.PlayerScripts
 
         private void StateHandler()
         {
-            if (Input.GetKey(crouchKey))
+            if (isWallRunning)
+            {
+                moveState = MoveState.WallRunning;
+                moveSpeed = wallRunSpeed;
+            }
+
+            else if (Input.GetKey(crouchKey))
             {
                 moveState = MoveState.Crouching;
                 moveSpeed = crouchSpeed;
