@@ -47,7 +47,6 @@ public class ReplaceSecondFloor : EditorWindow
                 GameObject newObj = (GameObject)PrefabUtility.InstantiatePrefab(prefabToReplaceWith);
                 newObj.transform.position = pos;
                 newObj.transform.rotation = rot;
-                newObj.transform.localScale = scale;
                 newObj.name = obj.name;
 
                 Undo.RegisterCreatedObjectUndo(newObj, "Replace Floor2");
