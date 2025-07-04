@@ -1,3 +1,4 @@
+using _Scripts._GunScripts;
 using TMPro;
 using UnityEngine;
 
@@ -5,6 +6,8 @@ namespace _Scripts._PlayerScripts
 {
     public class PlayerMoveControl : MonoBehaviour
     {
+        private static readonly int IsRifle = Animator.StringToHash("is2H-aim");
+
         // TODO: sử dụng ScriptableObject để dễ xử lý việc thay đổi giá trị và input thay vì gán trực tiếp (26/5/2025)(trung)
         [Header("Debug Info")] public TMP_Text SpeedText;
         public TMP_Text StateText;
@@ -41,6 +44,13 @@ namespace _Scripts._PlayerScripts
         public MoveState moveState;
         public bool isWallRunning;
 
+
+        [Header("Animator Control")] public Animator playerAnimator;
+
+        [Header("Weapon")] public GunHolderControl gunHolder;
+
+        private GameObject currentWeapon;
+
         public enum MoveState
         {
             Walking,
@@ -56,6 +66,7 @@ namespace _Scripts._PlayerScripts
             rb.freezeRotation = true;
             readyToJump = true;
             starYScale = transform.localScale.y;
+            //get curremt weapon from GunHolderControl
         }
 
         void Update()
@@ -77,6 +88,17 @@ namespace _Scripts._PlayerScripts
             else
             {
                 rb.drag = 0f;
+            }
+
+            //Gun animation control
+            currentWeapon = gunHolder.GetCurrentWeapon();
+            if (currentWeapon == gunHolder.rifle)
+            {
+                playerAnimator.SetBool(IsRifle, true);
+            }
+            else
+            {
+                playerAnimator.SetBool(IsRifle, false);
             }
         }
 

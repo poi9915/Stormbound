@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - 2HandGun
+  - 1HandGun
   layers:
   - Default
   - TransparentFX
@@ -13,8 +15,8 @@ TagManager:
   - Water
   - UI
   - Wall
-  - 
-  - 
+  - Player_Head
+  - Weapon_Layer
   - 
   - 
   - 
