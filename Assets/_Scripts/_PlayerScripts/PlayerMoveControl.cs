@@ -1,3 +1,4 @@
+using _Scripts._Core;
 using _Scripts._GunScripts;
 using TMPro;
 using UnityEngine;
@@ -7,36 +8,46 @@ namespace _Scripts._PlayerScripts
     public class PlayerMoveControl : MonoBehaviour
     {
         private static readonly int IsRifle = Animator.StringToHash("is2H-aim");
+        private static readonly int IsJumping = Animator.StringToHash("isJumping");
 
-        // TODO: sử dụng ScriptableObject để dễ xử lý việc thay đổi giá trị và input thay vì gán trực tiếp (26/5/2025)(trung)
-        [Header("Debug Info")] public TMP_Text SpeedText;
+        [Header("Debug Info")] 
+        public TMP_Text SpeedText;
         public TMP_Text StateText;
+        
         [Header("Movement")] private float moveSpeed;
         public float walkSpeed;
         public float sprintSpeed;
         public float groundDrag;
         public float wallRunSpeed;
-        [Header("Jumping")] public float jumpForce;
+        
+        [Header("Jumping")] 
+        public float jumpForce;
         public float jumpCooldown;
         public float airMultiplier;
         bool readyToJump;
 
-        [Header("Keybindings")] public KeyCode jumpKey = KeyCode.Space;
+        [Header("Keybindings")] 
+        public KeyCode jumpKey = KeyCode.Space;
         public KeyCode sprintKey = KeyCode.LeftShift;
         public KeyCode crouchKey = KeyCode.C;
 
-        [Header("Crouching")] public float crouchSpeed;
+        [Header("Crouching")]
+        public float crouchSpeed;
         public float crouchYScale;
         private float starYScale;
 
-        [Header("Slope Moving")] public float maxSlopeAngle;
+        [Header("Slope Moving")]
+        public float maxSlopeAngle;
         private RaycastHit slopeHit;
         private bool isOnSlope;
-        [Header("Ground Checking")] public float playerHeight;
+        
+        [Header("Ground Checking")]
+        public float playerHeight;
         public LayerMask groundLayer;
         bool isGrounded;
 
-        [Header("Input Data")] public Transform orientation;
+        [Header("Input Data")]
+        public Transform orientation;
         float horizontalInput;
         float verticalInput;
         private Vector3 moveDirection;
@@ -45,14 +56,17 @@ namespace _Scripts._PlayerScripts
         public bool isWallRunning;
 
 
-        [Header("Animator Control")] public Animator playerAnimator;
-
-        [Header("Weapon")] public GunHolderControl gunHolder;
-
+        [Header("Animator Control")] 
+        public Animator playerAnimator;
+        
+        [Header("Weapon")]
+        public GunHolderControl gunHolder;
         private GameObject currentWeapon;
+        private int moveLayerIndex;
 
         public enum MoveState
         {
+            Idle,
             Walking,
             Crouching,
             Sprinting,
@@ -62,6 +76,7 @@ namespace _Scripts._PlayerScripts
 
         void Start()
         {
+            moveLayerIndex = playerAnimator.GetLayerIndex("Leg Layer");
             rb = GetComponent<Rigidbody>();
             rb.freezeRotation = true;
             readyToJump = true;
@@ -100,6 +115,9 @@ namespace _Scripts._PlayerScripts
             {
                 playerAnimator.SetBool(IsRifle, false);
             }
+
+
+            playerAnimator.SetBool(IsJumping, (moveState == MoveState.Air));
         }
 
         private void StateHandler()
@@ -115,20 +133,30 @@ namespace _Scripts._PlayerScripts
                 moveState = MoveState.Crouching;
                 moveSpeed = crouchSpeed;
             }
-            else if (isGrounded && Input.GetKey(sprintKey))
+            else if (isGrounded && Input.GetKey(sprintKey) && (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f ||
+                                                               Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f))
             {
                 moveState = MoveState.Sprinting;
+                playerAnimator.SetLayerWeight(moveLayerIndex, 0.9f);
                 moveSpeed = sprintSpeed;
             }
-            else if (isGrounded)
+            else if (isGrounded && (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f ||
+                                    Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f))
             {
                 moveState = MoveState.Walking;
+                playerAnimator.SetLayerWeight(moveLayerIndex, 0.5f);
                 moveSpeed = walkSpeed;
             }
-
+            else if (!(Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f) &&
+                     isGrounded)
+            {
+                moveState = MoveState.Idle;
+                playerAnimator.SetLayerWeight(moveLayerIndex, 0f);
+            }
             else
             {
                 moveState = MoveState.Air;
+                playerAnimator.SetLayerWeight(moveLayerIndex, 0.5f);
             }
         }
 

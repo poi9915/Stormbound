@@ -7,6 +7,8 @@ namespace _Scripts._GunScripts
 {
     public class RifleGunControl : MonoBehaviour, IGun
     {
+        private static readonly int isReload = Animator.StringToHash("isReload");
+
         [Header("Rifle Settings")] [SerializeField]
         private int maxAmmo = 30;
 
@@ -14,13 +16,17 @@ namespace _Scripts._GunScripts
         [SerializeField] private float reloadTime = 1.5f;
         [SerializeField] private float damage = 15f;
         [SerializeField] private int shootRange = 100;
+        [SerializeField] private ParticleSystem muzzleFlash;
 
         [Header("References")] [SerializeField]
         private Transform orientation;
 
+        [Header("Animator Control")] public Animator playerAnimator;
+
         public KeyCode shootKey = KeyCode.Mouse0;
         public KeyCode reloadKey = KeyCode.R;
         [SerializeField] public int CurrentAmmo { get; private set; }
+        public ParticleSystem MuzzleFlash => muzzleFlash;
         public int MaxAmmo => maxAmmo;
         public float FireRate => fireRate;
         public float ReloadTime => reloadTime;
@@ -56,6 +62,16 @@ namespace _Scripts._GunScripts
         {
             if (CurrentAmmo <= 0) return;
             CurrentAmmo--;
+            if (!MuzzleFlash.isPlaying)
+            {
+                MuzzleFlash.Play();
+            }
+            else
+            {
+                MuzzleFlash.Clear();
+                MuzzleFlash.Play();
+            }
+
             Ray rayCam = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.5f));
             Vector3 targetPoint;
             if (Physics.Raycast(rayCam, out RaycastHit hit, shootRange))
@@ -90,10 +106,12 @@ namespace _Scripts._GunScripts
             }
         }
 
+
         private IEnumerator ReloadCoroutine()
         {
             isReloading = true;
             Debug.Log("Rifle Reloading...");
+            playerAnimator.SetBool(isReload, isReloading);
             yield return new WaitForSeconds(reloadTime);
             CurrentAmmo = maxAmmo;
             isReloading = false;

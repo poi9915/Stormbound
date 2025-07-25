@@ -1,4 +1,7 @@
-﻿namespace _Scripts._Core
+﻿using Unity;
+using UnityEngine;
+
+namespace _Scripts._Core
 {
     public interface IGun
     {
@@ -9,5 +12,6 @@
         float Damage { get; }
         void Shoot();
         void Reload();
+        ParticleSystem MuzzleFlash { get; }
     }
 }

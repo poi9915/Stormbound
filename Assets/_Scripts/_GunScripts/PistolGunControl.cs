@@ -6,13 +6,17 @@ namespace _Scripts._GunScripts
 {
     public class PistolGunControl : MonoBehaviour, IGun
     {
-        [Header("Pistol Settings")] 
-        
-        [SerializeField] private int maxAmmo = 8;
+        private static readonly int isReload = Animator.StringToHash("isReload");
+
+        [Header("Pistol Settings")] [SerializeField]
+        private int maxAmmo = 8;
+
         [SerializeField] private float fireRate = 0.5f;
         [SerializeField] private float reloadTime = 1.2f;
         [SerializeField] private float damage = 10f;
         [SerializeField] private int shootRange = 80;
+        [SerializeField] private ParticleSystem muzzleFlash;
+        [Header("Animator Control")] public Animator playerAnimator;
 
         [Header("References")] [SerializeField]
         private Transform orientation;
@@ -20,6 +24,7 @@ namespace _Scripts._GunScripts
         public KeyCode shootKey = KeyCode.Mouse0;
         public KeyCode reloadKey = KeyCode.R;
         [SerializeField] public int CurrentAmmo { get; private set; }
+        public ParticleSystem MuzzleFlash => muzzleFlash;
         public int MaxAmmo => maxAmmo;
         public float FireRate => fireRate;
         public float ReloadTime => reloadTime;
@@ -55,6 +60,17 @@ namespace _Scripts._GunScripts
         {
             if (CurrentAmmo <= 0) return;
             CurrentAmmo--;
+            if (!MuzzleFlash.isPlaying)
+            {
+                MuzzleFlash.Play();
+            }
+            else
+            {
+                MuzzleFlash.Clear();
+                MuzzleFlash.Play();
+            }
+
+
             Ray rayCam = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.5f));
             Vector3 targetPoint;
             if (Physics.Raycast(rayCam, out RaycastHit hit, shootRange))
@@ -89,9 +105,11 @@ namespace _Scripts._GunScripts
             }
         }
 
+
         private IEnumerator ReloadCoroutine()
         {
             isReloading = true;
+            playerAnimator.SetBool(isReload, isReloading);
             Debug.Log("Rifle Reloading...");
             yield return new WaitForSeconds(reloadTime);
             CurrentAmmo = maxAmmo;
