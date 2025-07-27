@@ -5,16 +5,163 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed1e93e8-d3f2-450f-b081-d618f9be1e10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/_Core/ICollectible.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/_Core/ICollectible.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stormbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stormbound/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AngeloMaN87/Prototype Map/Scenes/Prototype Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AngeloMaN87/Prototype Map/Scenes/Prototype Map.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Animation/_Player/Dummy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Animation/_Player/Dummy.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/_Core/IGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/_Core/IGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/_GunScripts/GunHolderControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/_GunScripts/GunHolderControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/_GunScripts/PistolGunControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/_GunScripts/PistolGunControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/_GunScripts/RifleGunControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/_GunScripts/RifleGunControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/_PlayerScripts/PlayerMoveControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/_PlayerScripts/PlayerMoveControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/URP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/URP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Assembly-CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Mirror.Authenticators.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Mirror.BouncyCastle.Cryptography.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Mirror.Components.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Mirror.Examples.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Mirror.Transports.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Mirror.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Mono.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/SimpleWebTransport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.ComponentModel.Composition.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Data.DataSetExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Data.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Drawing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.EnterpriseServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.IO.Compression.FileSystem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.IO.Compression.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Net.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Numerics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Runtime.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.ServiceModel.Internals.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Transactions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Xml.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/System.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Telepathy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.InputSystem.ForUI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.InputSystem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.ProBuilder.Csg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.ProBuilder.KdTree.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.ProBuilder.Stl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.ProBuilder.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.Timeline.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.VisualScripting.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.VisualScripting.Flow.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/Unity.VisualScripting.State.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.AIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.ARModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.AccessibilityModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.AndroidJNIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.AnimationModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.AssetBundleModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.AudioModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.ClothModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.ClusterInputModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.ClusterRendererModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.ContentLoadModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.CoreModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.CrashReportingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.DSPGraphModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.DirectorModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.GIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.GameCenterModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.GridModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.HotReloadModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.IMGUIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.ImageConversionModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.InputLegacyModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.InputModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.JSONSerializeModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.LocalizationModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.NVIDIAModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.ParticleSystemModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.PerformanceReportingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.Physics2DModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.PhysicsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.ProfilerModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.PropertiesModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.ScreenCaptureModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.SharedInternalsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.SpriteMaskModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.SpriteShapeModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.StreamingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.SubstanceModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.SubsystemsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.TLSModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.TerrainModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.TextRenderingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.TilemapModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UIElementsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UmbraModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UnityConnectModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UnityCurlModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UnityWebRequestModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.VFXModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.VRModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.VehiclesModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.VideoModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.VirtualTexturingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.WindModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.XRModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/UnityEngine.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/kcp2k.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/mscorlib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Managed/netstandard.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Resources/unity default resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/Resources/unity_builtin_extra" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/RuntimeInitializeOnLoads.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/ScriptingAssemblies.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/app.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/boot.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/globalgamemanagers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/globalgamemanagers.assets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/globalgamemanagers.assets.resS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/level0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/level0.resS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/resources.assets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/resources.assets.resS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/sharedassets0.assets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/GunZone_Data/sharedassets0.assets.resS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/2.0/machine.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/2.0/settings.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/2.0/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/4.0/machine.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/4.0/settings.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/4.0/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/4.5/machine.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/4.5/settings.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/4.5/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/browscap.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/MonoBleedingEdge/etc/mono/mconfig/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/UnityCrashHandler64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildDemo/UnityPlayer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +209,17 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Build/GunZone.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Administrator\Stormbound\BuildDemo" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.62f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\Administrator\Stormbound -debugCodeOptimization" />
@@ -133,6 +291,8 @@
       <workItem from="1753398151746" duration="1562000" />
       <workItem from="1753399903194" duration="4507000" />
       <workItem from="1753472830109" duration="706000" />
+      <workItem from="1753474041823" duration="265000" />
+      <workItem from="1753475051761" duration="2444000" />
     </task>
     <servers />
   </component>
