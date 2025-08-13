@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: fbb8946f9e5d4f944841051e738dd5ff
+<<<<<<<< HEAD:Assets/KayKit_Prototype_Bits_1.0_FREE/Assets/obj/Ammo_Box.mtl.meta
+guid: e2b86a08066613f4bb79178bb5d09fe4
+========
+guid: 3cc912ce16ea22f489ee3aa5b2ed97ac
+>>>>>>>> Map1:Assets/KayKit_Forest_Nature_Pack_1.0_FREE/Assets/gltf/Bush_1_A_Color1.gltf.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: db659e825b3083c45836ba84eeaf6a17
+<<<<<<<< HEAD:Assets/Phoenix3D/Textures.meta
+guid: ef13ff9e7fc1a4648b65315bb98846c2
+========
+guid: 12f4870d95cec5d49af0fd4b084eeed6
+>>>>>>>> Map1:Assets/KayKit_Forest_Nature_Pack_1.0_FREE/Textures.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

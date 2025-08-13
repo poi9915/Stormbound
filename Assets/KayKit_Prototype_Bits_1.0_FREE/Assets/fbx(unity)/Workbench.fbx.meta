@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1629fc63f9c7bcf4e90f73fe837a8191
+=======
+<<<<<<<< HEAD:Assets/KayKit_Prototype_Bits_1.0_FREE/Assets/fbx(unity)/Ammo_Box.fbx.meta
+guid: 1596d201d2e9c3542b3a654e3cd011d2
+========
+guid: 93e6459a2e92696468b2c67fd4d1e838
+>>>>>>>> Map1:Assets/KayKit_Prototype_Bits_1.0_FREE/Assets/fbx(unity)/Workbench.fbx.meta
+>>>>>>> Map1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []

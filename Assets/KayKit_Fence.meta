@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 9cf7e4317b7e84e3180dbc08959d6bb0
+<<<<<<<< HEAD:Assets/KayKit_Fence.meta
+guid: b6ea00f368a532d4299b68a658959d43
+========
+guid: 74f2794216ed1434f9635349ebca78a5
+>>>>>>>> Map1:Assets/KayKit_Forest_Nature_Pack_1.0_FREE/Assets.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

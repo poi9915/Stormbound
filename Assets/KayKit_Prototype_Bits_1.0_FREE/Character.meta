@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 1a31d681d9a7a4648bd31fbdd7bb88f2
+<<<<<<<< HEAD:Assets/KayKit_Prototype_Bits_1.0_FREE/Character.meta
+guid: 012e54ee1d28efe4f82dc0d57fdb7760
+========
+guid: 6158febb0d8394046a22ddeacda71a70
+>>>>>>>> Map1:Assets/HoangMAP.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

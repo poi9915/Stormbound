@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 37ff2101f535747e989cb61267edc024
+<<<<<<<< HEAD:Assets/KayKit_Prototype_Bits_1.0.meta
+guid: cfa5a8ece19019b4e910fc2ed448e9f9
+========
+guid: 4bf674cd808be8641920f12a71d47688
+>>>>>>>> Map1:Assets/KayKit_Forest_Nature_Pack_1.0_FREE.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
